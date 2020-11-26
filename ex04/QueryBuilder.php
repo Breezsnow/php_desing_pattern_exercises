@@ -27,9 +27,12 @@ class QueryBuilder
         return $this;
     }
 
-    public function __toString()
+    public function __toString()//: QueryBuilder
     {
-        return 'SELECT' . implode(", ", $this->select) . 'FROM' . implode(", ", $this->from) . 'WHERE' . implode(", ", $this->where);
+        // $this->__toString = "'SELECT ' . implode(', ', $this->select) . ' FROM ' . implode(', ', $this->from) . ' WHERE ' . implode(' AND ', $this->where)";
+        // return $this;
+
+        return 'SELECT ' . implode(", ", $this->select) . ' FROM ' . implode(", ", $this->from) . ' WHERE ' . implode(" AND ", $this->where);
     }
     
 }

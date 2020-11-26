@@ -18,4 +18,9 @@ class Emitter
   {
     
   }
+
+  public function on(string $event, callable $fct)
+  {
+
+  }
 }
