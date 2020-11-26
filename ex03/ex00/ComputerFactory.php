@@ -9,4 +9,6 @@ class ComputerFactory
     {
         return new ComputerDell($brand);
     }
+
+    //le code fonctionne tout seul :)
 }
